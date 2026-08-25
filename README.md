@@ -2,6 +2,10 @@
 
 Schema Branch is a web app for branching, diffing, and merging database schemas. It treats the schema as the versioned artifact: tables, columns, column types, nullability, constraints, and indexes. Row data is intentionally out of scope.
 
+## Deployed demo
+
+[https://schema-branch.vercel.app/](https://schema-branch.vercel.app/)
+
 ## Why this project
 
 I chose the database schema version-control prompt because it combines a hard product problem with a hard frontend problem. The hard part is not drawing tables on screen; it is making schema evolution understandable. A naive text diff is noisy and often wrong from the user's perspective, so this app uses semantic diff rules such as column added, column renamed, column retyped, and breaking removal.
